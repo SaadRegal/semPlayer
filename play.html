@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>semPlayer</title>
+    <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/range.css">
+    <link rel="stylesheet" href="css/coverflow.css">
+</head>
+<body>
+<div class="closeOverlay">
+    <i class="angle down icon"></i>
+</div>
+<div class="ui vertical inverted visible sidebar secondary menu transparent-sidebar left-sidebar">
+    <div class="item">
+        <a class="ui logo icon tiny image " id="logo">
+            <img src="images/logo.png">
+        </a>
+        <a href="/"><b>Sem Player</b></a>
+    </div>
+    <div class="active item">
+        <div class="ui inverted transparent icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="ui divider"></div>
+    <a class="active item" href="">
+        <b>Home</b><i class="home icon"></i>
+    </a>
+    <div class="ui inverted accordion">
+        <div class="item" style="width: 100%">
+            <div class="title">Library<i class="float-r icon folder"></i></div>
+            <div class="content">
+                <div class="vertical menu">
+                    <a href="#" class="item">Your Music <i class="icon music"></i></a>
+                    <a href="#" class="item">Favorite <i class="icon star"></i></a>
+                    <a href="#" class="item">Podcast <i class="icon podcast"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item" style="width: 100%">
+            <div class="title">Playlist<i class="float-r icon list"></i></div>
+            <div class="content">
+                <div class="vertical menu">
+                    <a href="#" class="item">Last Releases</a>
+                    <a href="#" class="item">Chill Beats</a>
+                    <a href="#" class="item">EDM Mix</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <a class="item" href="">Explore</a>
+        <a class="item" href="">Trending Albums</a>
+    </div>
+
+</div>
+<div class="pusher">
+    <div class="bar-container">
+        <div class="ui attached right menu top-bar inverted">
+            <a class="item" id="toggle_menu"> <i class="sidebar icon"></i> Menu </a>
+            <div class="right menu ">
+				<span class="item">
+            <img class="ui avatar image" src="images/avatar.png" alt="">
+            Saad Regal
+            </span>
+                <a class="item"> <i class="sign out icon"></i> Logout </a>
+            </div>
+        </div>
+    </div>
+    <!--page content -->
+    <div class="section-container" style="">
+        <div id="explore" style="margin-bottom: 10%">
+            <h1 class="ui header inverted">Explore</h1>
+            <div class="ui pointing secondary menu inverted" style="border:0">
+                <a class="item active" data-tab="1"><i class="find icon"></i>Overview</a>
+                <a class="item" data-tab="2"><i class="line chart icon"></i>Rising</a>
+                <a class="item" data-tab="3"><i class="smile icon"></i>Genre & Mood</a>
+            </div>
+            <div class="tabs">
+                <div class="ui tab segment active glass" data-tab="1"
+                     style="overflow-y: scroll; box-shadow:0 0;border:0;">
+                    <div class="wrapper">
+
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/rockstone.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Rockstone Week 35
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/nightrock.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Night Rock
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/williamfaulkner.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Bad Postman Vibes
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/heisenberg.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Heisenberg Club
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/vr.png" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Listen On VR
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/mavericks.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        The Mavericks
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/hermitude.png" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Hermitude
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/21pilot.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        TwentyOne Pilots
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui tab segment glass" data-tab="2" style="overflow-y: scroll ; box-shadow:0 0;border:0;">
+                    <div class="wrapper">
+
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/imagine-dragons.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Imagine Dragons
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/studio.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Studio 22pm
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/rockstone2.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Rockstone Week 33
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/spamilton.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Spamilton
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/parkermillsap.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Parker Millsap
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/chiraq.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Chi-Raq
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/scifi.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Sci-fi Fans
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui medium image gradient-overlay column">
+                            <img src="./images/nothingbigger.jpg" alt="">
+                            <div class="ui dimmer active">
+                                <div class="content">
+                                    <h4 class="ui inverted icon header" style="display: table-cell;
+    vertical-align: bottom;">
+                                        Nothing Bigger
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui tab segment glass" data-tab="3" style="overflow-y: scroll; box-shadow:0 0;border:0;">
+                    <div class="ui five column grid">
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Pop</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Rock</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Electronic</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Deep House</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Country</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Jazz</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Pop</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Rock</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Electronic</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Deep House</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Country</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+                        <!--item-->
+                        <div class="column">
+                            <div class="ui medium dimmable image">
+                                <div class="ui dimmer active">
+                                    <div class="content">
+                                        <div class="center">
+                                            <i class="huge video play icon"></i>
+                                            <h3 class="">Jazz</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/kygo.jpg">
+                            </div>
+                        </div>
+                        <!--item-->
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="ui divider teal"></div>
+            <div class="trending">
+                <h3 class="ui header inverted">Trending Albums</h3>
+                <div class="ui grid special">
+                    <!--item-->
+                    <div class="four wide column link">
+                        <div class="ui medium dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <i class="huge video play icon"></i>
+                                        <h3 class="">Stories - Avicii</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/stories.jpg">
+                        </div>
+                    </div>
+                    <!--item-->
+
+                    <!--item-->
+                    <div class="four wide column link">
+                        <div class="ui medium dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <i class="huge video play icon"></i>
+                                        <h3 class="">Evolve - Imagine Dragons</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/evolve.jpg">
+                        </div>
+                    </div>
+                    <!--item-->
+
+                    <!--item-->
+                    <div class="four wide column link">
+                        <div class="ui medium dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <i class="huge video play icon"></i>
+                                        <h3 class="">One Minute More - Capital Cities</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/capital-cities.jpg">
+                        </div>
+                    </div>
+                    <!--item-->
+
+                    <!--item-->
+                    <div class="four wide column link">
+                        <div class="ui medium dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <i class="huge video play icon"></i>
+                                        <h3 class="">Sunburn - Droeleo </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/droeloe-sunburn.jpg">
+                        </div>
+                    </div>
+                    <!--item-->
+
+                    <!--item-->
+                    <div class="four wide column link">
+                        <div class="ui medium dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <i class="huge video play icon"></i>
+                                        <h3 class="">Towers - April </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/towers.jpg">
+                        </div>
+                    </div>
+                    <!--item-->
+
+                    <!--item-->
+                    <div class="four wide column link">
+                        <div class="ui medium dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <i class="huge video play icon"></i>
+                                        <h3 class="">Ghost Stories - Coldplay</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/ghoststories.jpg">
+                        </div>
+                    </div>
+                    <!--item-->
+
+                    <!--item-->
+                    <div class="four wide column link">
+                        <div class="ui medium dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <i class="huge video play icon"></i>
+                                        <h3 class="">Feels - Calvin Harris</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/feels.png">
+                        </div>
+                    </div>
+                    <!--item-->
+
+                    <!--item-->
+                    <div class="four wide column link">
+                        <div class="ui medium dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <i class="huge video play icon"></i>
+                                        <h3 class="">Stay - Kygo</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="images/kygo.jpg">
+                        </div>
+                    </div>
+                    <!--item-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coverflow" id="slider" style="z-index: -1; height: 86vh">
+        <div class="cover"><img width="500" src="images/stories.jpg"></div>
+        <div class="cover"><img width="500" src="images/ghoststories.jpg"></div>
+        <div class="cover"><img width="500" src="images/kygo.jpg"></div>
+        <div class="cover"><img width="500" src="images/droeloe-sunburn.jpg"></div>
+        <div class="cover"><img width="500" src="images/feels.png"></div>
+        <div class="cover"><img width="500" src="images/evolve.jpg"></div>
+        <div class="cover"><img width="500" src="images/true2.jpg"></div>
+        <div class="cover"><img width="500" src="images/capital-cities.jpg"></div>
+    </div>
+
+    <div class="player-overlay" style="transition: all .3s ease-in-out">
+        <div class="ui segment inverted player-bar" style="margin: 0; padding: 0; border-radius: 0;height: 80px;">
+            <div class="song-info">
+                <div class="thumb-player"
+                     style="width:80px; display: flex; flex-direction: column; align-items: center; ">
+                    <div class="ui image">
+                        <img src="images/kygo.jpg">
+                    </div>
+                    <div style="display: none;flex-direction: column;align-items: center;justify-content: center; margin-top:10px; opacity: 0">
+                        <div class="grey-text song-name"><h3 class="link-underlined">Song Name</h3></div>
+                        <div class="grey-text"><h3 class="link-underlined">Artist</h3></div>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: column; justify-content: center; margin-left: 10px">
+                    <div class="grey-text song-name"><p class="link-underlined">Song Name</p></div>
+                    <div class="grey-text"><p class="link-underlined">Artist</p></div>
+                </div>
+            </div>
+            <div class="player-controls-container">
+                <div class="seek-bar">
+                    <span>0:26</span>
+                    <div class="ui range accent" id="seek-bar" style="margin-bottom: 10px"></div>
+                    <span>2:40</span>
+                </div>
+                <div class="player-controls">
+                    <div><i class="accent shuffle icon"></i></div>
+                    <div><i class="accent step backward icon"></i></div>
+                    <div><i id="play-pause" class="accent pause icon large"></i></div>
+                    <div><i class="accent step forward icon"></i></div>
+                    <div><i class="accent repeat icon"></i></div>
+                </div>
+
+            </div>
+            <div class="right aligned column" style="margin: 1% 0 0 0 ;">
+                <div class="volume-control">
+                    <div><i class="accent volume up icon large"></i></div>
+                    <div class="ui range accent" id="volume-range" style="width: 100px;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/semantic.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/range.js"></script>
+<script src="js/coverflow.min.js"></script>
+<script src="js/Vibrant.min.js"></script>
+
+<script type="text/javascript">
+    function closeOverlay() {
+        hideCloseButton();
+        $('body').css({overflow: ''});
+
+        $('.player-overlay').animate({
+            height: '80px'
+        });
+        $('#slider').css({
+            'z-index': '-1',
+            opacity: '0'
+        });
+        setTimeout(function () {
+            $('.left-sidebar').css('z-index', '102')
+        }, 500)
+        $('.song-info').children().eq(0).animate({
+            'margin-left': '0',
+            opacity: '1'
+        })
+    }
+
+    function showCloseButton() {
+        $('.closeOverlay').transition('fade down');
+        $('.closeOverlay>i').transition('set looping')
+            .transition('bounceArrow', '2000ms')
+    }
+
+    function hideCloseButton() {
+        $('.closeOverlay').transition('fade up');
+        $('.closeOverlay>i').transition('remove looping');
+    }
+
+    $(document).ready(function () {
+        var $slider = $('#slider');
+        var index = $slider.index();
+        var numCovers = $slider.children().length;
+
+        function nextCover() {
+            if (index < numCovers - 1) {
+                $slider.coverflow({active: ++index});
+            }
+        }
+
+        function prevCover() {
+            if (index > 0) {
+                $slider.coverflow({active: --index});
+            }
+        }
+
+        $(document).keyup(function (e) {
+            console.log(e.keyCode)
+            switch (e.keyCode) {
+                case 27:
+                    closeOverlay();
+                    break;
+                case 39:
+                    nextCover();
+                    break;
+                case 37:
+                    prevCover();
+                    break;
+            }
+        });
+
+        $('i.step.forward').on('click', function () {
+            nextCover()
+        });
+        $('i.step.backward').on('click', function () {
+            prevCover();
+        });
+
+        function makeCoverflow() {
+            $('.coverflow').coverflow({
+                active: 2,
+                select: function (event, cover, index) {
+                    setTimeout(function () {
+                        var dom = document.createElement('div');
+                        dom.innerHTML = cover.active[0].innerHTML;
+                        var img = $('img', dom);
+                        $('img', '.song-info>:first-child').attr('src', img.attr('src'));
+                        var vibrant = new Vibrant(img.get(0));
+                        var swatches = vibrant.swatches();
+                        changeAccent(swatches.Vibrant.getHex());
+                        $('.player-overlay').css({
+                            'background': shadeColor(swatches.DarkVibrant.getHex(), -80) + 'ed'
+                        });
+                        $('body').css({
+                            background: 'linear-gradient(' +
+                                shadeColor(swatches.Muted.getHex(), -80)
+                                + ', ' +
+                                shadeColor(swatches.Vibrant.getHex(), -40)
+                                + ') no-repeat fixed center'
+                        });
+                        $('.closeOverlay').css({'background-color': shadeColor(swatches.Vibrant.getHex(), -20)})
+
+
+                    })
+                }
+            });
+        }
+
+        makeCoverflow();
+        $('.song-info>:first-child').on('click', function (e) {
+
+            window.scrollTo(0, 0);
+            $('body').css({'overflow': 'hidden'});
+            $('.left-sidebar').css('z-index', '1')
+            $(this).clone(true, true).prependTo(".song-info").animate({'margin-left': '-80px', opacity: '0'});
+            $('.player-overlay').animate({'height': '100vh'}, 0, function () {
+                setTimeout(function () {
+                    $('.player-overlay').css({'background': '#232425'})
+                }, 300)
+            });
+            $(this).css('position', 'fixed').animate({
+                top: '50%',
+                left: '50%',
+                width: '500px',
+                height: '600px',
+                marginTop: '-350px',
+                marginLeft: '-250px'
+            }, 500, function () {
+                $('#slider').css('z-index', '1002')
+                    .animate({opacity: '1'}, function () {
+                        showCloseButton();
+                        $('.song-info').children().eq(1).remove();
+                    });
+                $(this).children().eq(1).animate({opacity: '1', 'margin-right': ''});
+            })
+                .children().eq(2).css({'display': 'flex', 'margin-right': '30px'});
+
+        });
+
+        $('#seek-bar').range({
+            min: 0,
+            max: 10,
+            start: 5
+        });
+
+        $('.volume').click(function () {
+            $('.volume.up,.volume.off').toggleClass('up off');
+        });
+
+        $('.menu .item')
+            .tab();
+
+        $('.special .image').dimmer({
+            on: 'hover'
+        });
+        $('.ui .accordion').accordion();
+        $('#volume-range').range({
+            min: 0,
+            max: 10,
+            start: 5
+        });
+        var $sidebar = $('.left-sidebar');
+        $('#toggle_menu').on('click', function (e) {
+            e.stopPropagation();
+            $sidebar.addClass('visible temporary').removeClass('invisible');
+            $('body').css({'overflow-x': 'hidden', position: 'fixed'}).animate({left: $sidebar.width()});
+        });
+        $('.pusher').on('click', function (e) {
+            e.stopPropagation();
+
+            niceCloseSidebar()
+        });
+
+        function niceCloseSidebar() {
+            if ($sidebar.hasClass('temporary')) {
+                $sidebar.addClass('invisible').removeClass('visible temporary');
+                $('body').css({'overflow-x': '', position: ''}).animate({left: ''})
+
+            }
+        }
+
+
+        $(window).on('load resize', function () {
+
+            var $sidebar = $('.left-sidebar');
+            if (!$sidebar.hasClass('invisible')) {
+                if ($(this).width() <= 768) {
+                    // Hide
+                    $sidebar.addClass('invisible').removeClass('visible')
+                }
+            }
+            if (!$sidebar.hasClass('visible')) {
+                if ($(this).width() > 768) {
+                    // Show
+                    $sidebar.addClass('visible').removeClass('invisible');
+                }
+            }
+            $('#slider').coverflow();
+            $('#seek-bar').range({
+                min: 0,
+                max: 10,
+                start: 5
+            });
+
+        });
+
+        if ($(window).width() <= 768) {
+            // Hide
+            $sidebar.addClass('invisible').removeClass('visible')
+        } else {
+            if ($(window).width() > 768) {
+                // Show
+                $sidebar.addClass('visible').removeClass('invisible');
+            }
+        }
+
+        $('.closeOverlay').on('click', function () {
+            closeOverlay();
+        });
+
+        /*Tips*/
+        $('.player-overlay').popup({
+            title: 'Coverflow',
+            content: 'click on the picture to open the coverflow',
+            transition: 'vertical flip'
+        })
+
+
+    }); //doc ready
+
+    function changeAccent(color) {
+        $('.ui.accent.range .inner .track-fill').css({backgroundColor: color})
+        $('i.accent.icon').css({color: color})
+    }
+
+    function shadeColor(color, percent) {
+
+        var R = parseInt(color.substring(1, 3), 16);
+        var G = parseInt(color.substring(3, 5), 16);
+        var B = parseInt(color.substring(5, 7), 16);
+
+        R = parseInt(R * (100 + percent) / 100);
+        G = parseInt(G * (100 + percent) / 100);
+        B = parseInt(B * (100 + percent) / 100);
+
+        R = (R < 255) ? R : 255;
+        G = (G < 255) ? G : 255;
+        B = (B < 255) ? B : 255;
+
+        var RR = ((R.toString(16).length === 1) ? "0" + R.toString(16) : R.toString(16));
+        var GG = ((G.toString(16).length === 1) ? "0" + G.toString(16) : G.toString(16));
+        var BB = ((B.toString(16).length === 1) ? "0" + B.toString(16) : B.toString(16));
+
+        return "#" + RR + GG + BB;
+    }
+</script>
+</body>
+</html>

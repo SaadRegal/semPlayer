@@ -1,0 +1,479 @@
+/*===Layout===*/
+.section-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.bar-container {
+    padding-left: 211px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.tabs {
+    margin-bottom: 70px;
+}
+
+div.ui.tab.glass {
+    height: 295px;
+    overflow: hidden;
+}
+.ui.sidebar {
+    overflow: visible !important;
+}
+.float-r {
+    float: right !important;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper > .column {
+    margin-bottom: 10px;
+}
+
+.column.grid.segment {
+    min-height: 100vh;
+}
+
+.image {
+    overflow: hidden;
+}
+.video_overlay {
+    background: rgba(5, 5, 15, 0.71);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+#top_menu {
+    border: none;
+}
+
+#video_background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    overflow: hidden;
+}
+
+/*===Backgrounds====*/
+body {
+    background-size: cover;
+    background: linear-gradient(#130538, #004c49) no-repeat fixed center;
+    min-width: 703px !important;
+}
+
+body.pushable > .pusher {
+    background-size: cover;
+    background: linear-gradient(#130538, #004c49) no-repeat fixed center;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.top-bar {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+/*Input*/
+.transparent-sidebar {
+    background: linear-gradient(#10053252, rgba(0, 0, 0, 0)) no-repeat fixed center !important;
+}
+
+.transparent-input {
+    background-color: rgba(27, 28, 29, 0.23) !important;
+}
+
+.transparent-input:focus {
+    background-color: rgba(125, 128, 129, 0.23) !important;
+}
+/*===Sidebar===*/
+.left-sidebar {
+    max-height: 89.5vh !important;
+}
+
+div.ui.vertical.inverted.sidebar.menu > a.item.active {
+    border-left: 3px solid #00b5ad;
+    background-color: rgba(255, 255, 255, .04);
+    border-radius: 0 !important;
+}
+
+div.ui.vertical.inverted.sidebar.menu > a.item:hover {
+    border-radius: 0 !important;
+}
+
+div.ui.vertical.inverted.sidebar.menu > div.item > div.menu > a:hover {
+    background-color: rgba(255, 255, 255, .08);
+}
+#toggle_menu {
+    display: none;
+}
+/*==Toggle buttons===*/
+.closeOverlay{
+    position: fixed;
+    margin: 5px 0 0 10px;
+    z-index: 1010;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /*opacity: 0;*/
+    display: none;
+    transition: all .3s ease-in-out;
+}
+.closeOverlay>i{
+    top:6px;
+    left:2px;
+    font-size: 20px;
+    position: relative;
+    opacity: 1;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.gradient-overlay > .ui.dimmer.active {
+    background: transparent linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.gradient-overlay > .ui.dimmer.active > .content > h4 {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 2px;
+}
+
+.gradient-overlay > .dimmer > .content > h4 {
+    display: table-cell;
+    vertical-align: bottom;
+    text-transform: capitalize;
+
+}
+/*------Player------*/
+/*Ranges*/
+.ui.range > .inner > .thumb {
+    transform: scale(0.5);
+    transition: transform 0.1s;
+}
+
+.ui.range > .inner > .thumb:hover {
+    transform: scale(0.8);
+    transition: transform 0.2s;
+}
+
+#seek-bar > .inner > .thumb {
+    transform: scale(0);
+    transition: transform 0.1s;
+}
+
+#seek-bar > .ui.range > .inner:hover + .thumb {
+    transform: scale(0.8);
+    transition: transform 0.2s;
+}
+
+.ui.accent.range .inner .track-fill {
+    background-color: #00b5ad;
+}
+
+i.accent.icon {
+    color: #00b5ad;
+}
+/*PlayerOverlay*/
+.player-overlay {
+    display: flex;
+    height: 80px;
+    z-index: 1001;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: color 1s ease-out;
+}
+
+#slider {
+    opacity: 0;
+    z-index: 1002;
+    top: 50%;
+    margin-top: -350px;
+    position: fixed
+}
+
+/*Volume Control */
+.volume-control {
+    display: -webkit-flex; /* Safari */
+    /*-webkit-align-items: center; !* Safari 7.0+ *!*/
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.player-bar {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    justify-content: space-between;
+
+}
+
+.song-info {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    justify-content: center;
+
+}
+
+.player-controls-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin: 1% 0 0 0;
+
+}
+
+/*Player Control */
+div.player-controls > div > i {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+div.player-controls > div > i:hover {
+    color: #ffffff !important;
+}
+
+div.player-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+/*seek bar and minutes count*/
+div.seek-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+/*===Typography====*/
+.song-name {
+    margin-bottom: 5px;
+}
+
+.link-underlined {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: color .5s ease-in-out;
+}
+
+.link-underlined:hover {
+    color: #00b5ad;
+    transition: color .5s ease-in-out;
+
+}
+
+.link-underlined:hover:after {
+    width: 100%;
+    background: #00b5ad;
+}
+
+.link-underlined:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+/*Colors*/
+.yellow-tint {
+    color: #dad085;
+}
+
+.white-text {
+    color: #ffffff !important;
+}
+
+.grey-text {
+    color: #dcddde;
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/*Other*/
+.link .clickable {
+    cursor: pointer;
+}
+
+.shadow-pulse {
+    box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 1);
+}
+
+
+
+
+
+
+/*home Page Style*/
+.hidden.menu {
+    display: none;
+}
+.masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+}
+
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.ui.vertical.stripe {
+    padding: 8em 0em;
+}
+
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+}
+
+.ui.vertical.stripe .floated.image {
+    clear: both;
+}
+
+.ui.vertical.stripe p {
+    font-size: 1.33em;
+}
+
+.ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+
+    .masthead.segment {
+        min-height: 350px;
+    }
+
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-container {
+        /*padding-right: 60px;*/
+        padding-left: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #toggle_menu {
+        display: block;
+    }
+
+    .bar-container {
+        padding-left: 0;
+    }
+}
+
+/* Bounce Arrow Animation*/
+
+@-webkit-keyframes bounceArrow {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes bounceArrow {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+.bounceArrow.transition {
+    -webkit-animation-duration: 750ms;
+    animation-duration: 750ms;
+    -webkit-animation-name: bounceArrow;
+    animation-name: bounceArrow;
+}
