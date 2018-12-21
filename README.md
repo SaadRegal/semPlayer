@@ -5,6 +5,11 @@
 
 ![image](https://user-images.githubusercontent.com/12308809/50053650-05962380-0139-11e9-933d-4a1a311eaf67.png)
 
+## Demo
+(Ad block will remove some features like video background, please consider disabling it)
+
+http://semplayer.surge.sh/
+
 ## Features 
 
 ### Intuitive Color 
@@ -38,9 +43,7 @@ Animated Coverflow made from music covers to switch between songs
 ## Note
 This project currently is slighly, outdated but within few weeks I’m going to make some major changes to make it a modern web player template that can actually play something
 
-## Demo
-(Ad block will disable some features like video background, please consider disabling it)
-http://semplayer.surge.sh/
+
 
 ## Quick Start
 
