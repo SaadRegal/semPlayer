@@ -39,6 +39,8 @@ Animated Coverflow made from music covers to switch between songs
 This project currently is slighly, outdated but within few weeks I’m going to make some major changes to make it a modern web player template that can actually play something
 
 ## Demo
+(Ad block will disable some features like video background, please consider disabling it)
+http://semplayer.surge.sh/
 
 ## Quick Start
 
