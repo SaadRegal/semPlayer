@@ -8,7 +8,7 @@
 ## Demo
 (Ad block will remove some features like video background, please consider disabling it)
 
-http://semplayer.surge.sh/
+https://semplayer.surge.sh/
 
 ## Features 
 
